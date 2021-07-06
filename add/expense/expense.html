@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<head>
+    <title>Expense</title>
+    <link href="expense.css" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class='header'>
+        <h1 class="text-center">Expense Management System</h1>
+    </div>
+
+    <div class='center'>
+        <button type="button" onclick="document.location = '../../dashboard/dashboard.html' " class="button">Dashboard</button>
+    </div>
+
+    <h1 class='center'>
+        ADD EXPENSE
+    </h1>
+
+    <form id="loginForm" onsubmit="expense(event)">
+
+        <div class="center">
+            <label class='txt'>Discription</label>
+            <div class='inputs'>
+
+                <input style="font-size: 12pt; height: 35px; width:800px; " id="discription" placeholder="Please dont leave me empty /sad face" />
+            </div>
+            <label class='txt'>Amount</label>
+            <div class='inputs'>
+
+                <input style="font-size: 12pt; height: 35px; width:800px; " id="amount" placeholder="Please dont leave me empty /sad face" />
+            </div>
+            <label class='txt'>Category</label>
+            <div class='inputs'>
+
+                <input style="font-size: 12pt; height: 35px; width:800px; " id="category" placeholder="Please dont leave me empty /sad face" />
+            </div>
+
+            <button class='button' type="submit">ADD</button>
+        </div>
+
+    </form>
+
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="../../firebase-config.js"></script>
+
+    <script src='./expense.js '></script>
+</body>
+
+</html>

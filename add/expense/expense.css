@@ -1,0 +1,30 @@
+.header {
+    background-color: darkcyan;
+    padding: 100px 100px;
+    color: white;
+    text-align: center;
+    justify-content: start;
+    font-size: 26px;
+}
+
+.button {
+    background-color: lightblue;
+    padding: 8px 26px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.center {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.inputs {
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.txt {
+    text-decoration: none;
+    font-size: 30px;
+}

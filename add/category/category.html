@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<head>
+    <title>Category</title>
+    <link href="category.css" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class='header'>
+        <h1 class="text-center">Expense Management System</h1>
+    </div>
+
+    <div class='center'>
+        <button type="button" onclick="document.location = '../../dashboard/dashboard.html' " class="button">Dashboard</button>
+    </div>
+
+    <h1 class='center'>All Categories</h1>
+
+    <div>
+
+        <div class='center'>
+            <button type="button" onclick="category()" id="button" class='button'>Add category</button>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Category</th>
+                    <th>Created On</th>
+                </tr>
+            </table>
+
+            <p id='dataShow'>
+
+            </p>
+
+            
+            
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="../../firebase-config.js"></script>
+
+    <script src='category.js'></script>
+</body>
+
+</html>

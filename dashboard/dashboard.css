@@ -1,0 +1,54 @@
+.header {
+    background-color: darkcyan;
+    padding: 100px 100px;
+    color: white;
+    text-align: center;
+    justify-content: start;
+    font-size: 26px;
+}
+
+.expense {
+    background-color: lightblue;
+    padding: 8px 26px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.category {
+    background-color: lightgreen;
+    padding: 8px 26px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button {
+    background-color: white;
+    border-color: red;
+    color: red;
+    padding: 4px 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.top {
+    padding: 8px 26px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.userName {
+    display: inline-block;
+}
+
+.button {
+    text-align: right;
+    display: inline-block;
+}

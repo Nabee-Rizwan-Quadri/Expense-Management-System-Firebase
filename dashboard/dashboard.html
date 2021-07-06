@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
+
+<head>
+    <title>Dashboard</title>
+    <link href="dashboard.css" rel="stylesheet" />
+</head>
+
+<body class='body'>
+
+    <div class="top">
+        <div id="userName" class="userName">
+        </div>
+
+        <div class="button">
+            <button type="button" onclick=logout() class="button">Logout</button>
+        </div>
+
+    </div>
+    <div class='header'>
+        <h1 class="text-center">Expense Management System</h1>
+    </div>
+
+
+    <div class='center'>
+        <button type="button" onclick="document.location = '../add/expense/expense.html' " class="expense">Add Expense</button>
+        <button type="button" onclick="document.location = '../add/category/category.html' " class="category">All Categories</button>
+    </div>
+
+    <div class='center'>
+        <input style="font-size: 12pt; height: 35px; width:800px; " type="search" id="searchList" placeholder="Search">
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Created On</th>
+                <th>Action</th>
+            </tr>
+
+        </table>
+        <table>
+            <p id='dataShow'></p>
+        </table>
+    </div>
+    
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="../firebase-config.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src='./dashboard.js'></script>
+    
+</body>
+
+</html>
