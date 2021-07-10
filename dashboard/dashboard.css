@@ -1,5 +1,10 @@
+body {
+    background-image: url(image.jpg);
+}
+
 .header {
-    background-color: darkcyan;
+    background-color: black;
+    opacity: 0.5;
     padding: 100px 100px;
     color: white;
     text-align: center;
@@ -14,21 +19,34 @@
     font-size: 16px;
 }
 
+.expense:hover {
+    background-color: lightblue;
+    color: white;
+}
+
 .category {
-    background-color: lightgreen;
+    background-color: lightpink;
     padding: 8px 26px;
     text-decoration: none;
     font-size: 16px;
 }
 
+.category:hover {
+    background-color: lightpink;
+    color: white;
+}
+
 .button {
-    background-color: white;
     border-color: red;
     color: red;
-    padding: 4px 13px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+}
+
+.button:hover {
+    background-color: red;
+    color: white;
 }
 
 .top {

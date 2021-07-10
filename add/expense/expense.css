@@ -1,10 +1,21 @@
+body {
+    background-image: url(image.jpg);
+}
+
 .header {
-    background-color: darkcyan;
+    background-color: black;
+    opacity: 0.5;
     padding: 100px 100px;
     color: white;
     text-align: center;
     justify-content: start;
     font-size: 26px;
+}
+
+.addExpense {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
 }
 
 .button {

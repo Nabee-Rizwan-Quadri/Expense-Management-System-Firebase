@@ -1,5 +1,11 @@
+body {
+    background-image: url(image.jpg);
+}
+
 .header {
-    background-color: darkcyan;
+    background-color: black;
+    opacity: 0.5;
+    padding: 100px 100px;
     padding: 100px 100px;
     color: white;
     text-align: center;
@@ -8,7 +14,7 @@
 }
 
 .button {
-    background-color: lightgreen;
+    background-color: lightpink;
     padding: 8px 26px;
     text-decoration: none;
     font-size: 16px;
