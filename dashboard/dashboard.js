@@ -33,6 +33,26 @@ firebase.auth().onAuthStateChanged((user) => {
     }
 });
 
+var expenses = localStorage.getItem("allexpenses")
+var parsedexpenses = expenses && JSON.parse(expenses)
+
+console.log(parsedexpenses)
+
+var html = "<table >";
+for (var i = 0; i < parsedexpenses.length; i++) {
+    html += "<tr>";
+    html += "<td>" + parsedexpenses[i].id + "</td>";
+    html += "<td>" + parsedexpenses[i].discription + "</td>";
+    html += "<td>" + parsedexpenses[i].amount + "</td>";
+    html += "<td>" + parsedexpenses[i].category + "</td>";
+    html += "<td>" + parsedexpenses[i].createdOn + "</td>";
+    html += "<td>" + parsedexpenses[i].action + "</td>";
+    html += "</tr>";
+}
+html += "</table>";
+console.log(html)
+document.getElementById("dataShow").innerHTML = html;
+
 console.log(userName)
 
 let logout = () => {
